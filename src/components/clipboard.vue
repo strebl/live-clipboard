@@ -41,7 +41,7 @@ export default {
     this.pusher = new Pusher('d24f5c60a087b764b609', { 
       cluster: 'eu',
       encrypted: true,
-      authEndpoint: 'https://clipboard-backend.dev/broadcasting/auth' 
+      authEndpoint: 'https://api.clipboard.strebel.xyz/broadcasting/auth' 
     })
 
     this.channel = this.pusher.subscribe('private-Clipboard.' + this.clipboardId)
