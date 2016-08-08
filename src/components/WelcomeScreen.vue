@@ -66,7 +66,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #36475A;
+  background: #37495c;
   color: white;
   flex-grow: 1;
   padding: 15px;
