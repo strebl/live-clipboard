@@ -36,6 +36,8 @@ export default {
   },
   props: ['clipboardId'],
   mounted () {
+    console.log(Bus)
+    console.log(Bus.$emit)
     this.clientId = (Math.random() + 1).toString(36).substring(7)
 
     this.pusher = new Pusher('d24f5c60a087b764b609', { 
@@ -72,7 +74,8 @@ export default {
       })
 
       this.channel.bind('client-clipboard:changed', (event) => {
-        let clipboard = this.decryptClipboard(event.clipboard)
+        // let clipboard = this.decryptClipboard(event.clipboard)
+        let clipboard = event.clipboard
 
         this.code = clipboard
       })
@@ -157,7 +160,8 @@ export default {
     }, 1000),
 
     encryptClipboard () {
-      return CryptoJS.AES.encrypt(this.code, 'secret key 123').toString()
+      // return CryptoJS.AES.encrypt(this.code, 'secret key 123').toString()
+      return this.code
     },
 
     decryptClipboard(encryptedClipboard) {
