@@ -12,15 +12,35 @@ export default {
 
 <style>
 html, body {
-  width: 100%;
+  background: #37495c;
+}
+
+html {
   height: 100%;
-  background: #3498db;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
 }
 
 #app {
   border-top: 3px solid #3498db;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: center;
+  flex: 1;
+}
+
+.p-t-1 {
+  padding-top: 1rem;
+}
+
+.p-t-2 {
+  padding-top: 2rem;
+}
+
+.m-b-1 {
+  margin-bottom: 1rem !important;
 }
 </style>

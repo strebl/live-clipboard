@@ -1,8 +1,8 @@
 <template>
   <span class="connection-indicator">
-    <span v-if="state == 'online'" class="tag tag-success">Connected</span>
-    <span v-if="state == 'error'" class="tag tag-danger">Connection Error</span>
-    <span v-if="state == 'offline'" class="tag tag-primary">Connecting...</span>
+    <span v-if="state == 'online'" class="tag is-primary">Connected</span>
+    <span v-if="state == 'error'" class="tag is-danger">Connection Error</span>
+    <span v-if="state == 'offline'" class="tag is-warning">Connecting...</span>
   </span>
 </template>
 
@@ -30,15 +30,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#title-bar {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  flex-basis: 50px;
-  background: #2E4155;
-}
-</style>

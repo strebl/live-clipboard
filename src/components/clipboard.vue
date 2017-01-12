@@ -186,6 +186,7 @@ export default {
 }
 
 .CodeMirror {
+  font-size: 1.1rem;
   width: 100%;
   height: 100%;
   background: #36495D;
