@@ -2,7 +2,7 @@
   <div id="welcome">
     <div class="row">
       <div class="col-xs-12 col-sm-6 offset-sm-3 col-md-4 offset-md-4 text-xs-center">
-        <img src="../assets/clipboard.png" alt="" class="img-fluid">
+        <img src="../assets/clipboard.svg" alt="" class="img-fluid hero-image">
       </div>
       <div class="col-xs-12 text-xs-center m-t-2">
         <h1>Live Clipboard</h1>
@@ -70,5 +70,9 @@ export default {
   color: white;
   flex-grow: 1;
   padding: 15px;
+}
+
+.hero-image {
+  width: 100%;
 }
 </style>
