@@ -142,7 +142,10 @@ export default {
         let lang = match ? match[1] : 'markdown'
         lang = CodeMirror.modes.hasOwnProperty(lang) ? lang : 'markdown'
 
-        if(cm.getMode() != lang) {
+        if(cm.getMode().name != lang) {
+          if(lang === 'php') {
+            lang = { name: 'php', startOpen: true }
+          }
           cm.setOption('mode', lang)
         }
     },
