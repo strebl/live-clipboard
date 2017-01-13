@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ConnectionIndicator from './connection-indicator.vue'
+import ConnectionIndicator from './ConnectionIndicator.vue'
 import Store from '../helpers/store'
 
 export default {

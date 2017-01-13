@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TitleBar from './title-bar.vue'
-import Clipboard from './clipboard.vue'
+import TitleBar from './TitleBar.vue'
+import Clipboard from './Clipboard.vue'
 import Store from '../helpers/store'
 
 export default {
