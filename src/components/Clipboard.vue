@@ -186,13 +186,19 @@ export default {
 
 #code-mirror-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .CodeMirror {
   font-size: 1.1rem;
-  width: 100%;
-  height: 100%;
+  flex: 1;
+  max-width: 100vw;
   background: #36495D;
   font-family: 'Inconsolata', monospace;
+}
+
+.CodeMirror-scroll {
+  height: 100vh;
 }
 </style>
