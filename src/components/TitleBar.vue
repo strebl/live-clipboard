@@ -47,6 +47,16 @@ export default {
   vertical-align: text-bottom;
 }
 
+.title-bar .level-left {
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+
+.title-bar .level-left > .level-item {
+  margin-bottom: 0;
+}
+
 .clipboard-id {
   font-weight: bold;
 }
