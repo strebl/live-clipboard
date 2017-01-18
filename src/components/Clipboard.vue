@@ -196,9 +196,10 @@ export default {
   max-width: 100vw;
   background: #36495D;
   font-family: 'Inconsolata', monospace;
+  display: flex;
 }
 
 .CodeMirror-scroll {
-  height: 100vh;
+  flex: 1;
 }
 </style>
