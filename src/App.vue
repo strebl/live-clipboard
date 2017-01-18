@@ -17,6 +17,7 @@ html, body {
 
 html {
   height: 100%;
+  overflow: auto;
 }
 
 body {
