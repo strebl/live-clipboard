@@ -36,8 +36,6 @@ export default {
   },
   props: ['clipboardId'],
   mounted () {
-    console.log(Bus)
-    console.log(Bus.$emit)
     this.clientId = (Math.random() + 1).toString(36).substring(7)
 
     this.pusher = new Pusher('d24f5c60a087b764b609', { 
